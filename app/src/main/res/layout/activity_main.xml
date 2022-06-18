@@ -17,11 +17,26 @@
         android:textSize="20sp"/>
 
     <Button
-        android:id="@+id/btn_intent_barvolume"
+        android:id="@+id/btn_BarVolume"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/bar_volume"
         android:textSize="18sp"
         android:layout_marginTop="10dp"/>
 
+    <Button
+        android:id="@+id/btn_MoveWithData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/move_withdata"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btn_dial_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dial_number"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"/>
 </LinearLayout>

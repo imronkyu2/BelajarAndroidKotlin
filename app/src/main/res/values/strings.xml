@@ -7,4 +7,7 @@
     <string name="hasil">Hasil</string>
     <string name="belajar_kotlin_dasar">Belajar Kotlin Dasar</string>
     <string name="bar_volume">Bar Volume</string>
+    <string name="move_withdata">Move WithData</string>
+    <string name="data_received">data received</string>
+    <string name="dial_number">dial number</string>
 </resources>

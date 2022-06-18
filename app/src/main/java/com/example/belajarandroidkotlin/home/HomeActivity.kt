@@ -1,29 +1,47 @@
 package com.example.belajarandroidkotlin.home
 
 import android.content.Intent
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.example.belajarandroidkotlin.R
 import com.example.belajarandroidkotlin.barvolume.BarVolumeActivity
+import com.example.belajarandroidkotlin.intentmovewithdata.MoveWithDataActivity
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener {
-    private lateinit var btn_intent_barvolume : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        btn_intent_barvolume = findViewById(R.id.btn_intent_barvolume)
-
+        val btn_intent_barvolume: Button = findViewById(R.id.btn_BarVolume)
         btn_intent_barvolume.setOnClickListener(this)
+        val btn_MoveWithData: Button = findViewById(R.id.btn_MoveWithData)
+        btn_MoveWithData.setOnClickListener(this)
+        val btn_dial_number: Button = findViewById(R.id.btn_dial_number)
+        btn_dial_number.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
-        if (p0?.id == R.id.btn_intent_barvolume){
-            val intent = Intent(this, BarVolumeActivity::class.java)
-            startActivity(intent)
+        when (p0?.id){
+
+            R.id.btn_BarVolume -> {
+                val intent = Intent(this, BarVolumeActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_MoveWithData -> {
+                val moveWithDataIntent = Intent(this@HomeActivity, MoveWithDataActivity::class.java)
+                moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_NAME, "DicodingAcademy Boy")
+                moveWithDataIntent.putExtra(MoveWithDataActivity.EXTRA_AGE, 5)
+                startActivity(moveWithDataIntent)
+            }
+            R.id.btn_dial_number -> {
+                val phoneNumber = "081210841382"
+                val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
+                startActivity(dialPhoneIntent)
+            }
         }
     }
 }
