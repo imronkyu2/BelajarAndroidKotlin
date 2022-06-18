@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">BelajarAndroidKotlin</string>
+    <string name="panjang">Panjang</string>
+    <string name="lebar">Lebar</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="hitung">Hitung</string>
+    <string name="hasil">Hasil</string>
+    <string name="belajar_kotlin_dasar">Belajar Kotlin Dasar</string>
+    <string name="bar_volume">Bar Volume</string>
 </resources>
