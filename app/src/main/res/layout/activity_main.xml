@@ -50,5 +50,13 @@
             android:text="@string/my_view_and_views"
             android:textSize="18sp"
             android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/btn_MyRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/myrecyclerview"
+            android:textSize="18sp"
+            android:layout_marginTop="10dp"/>
     </LinearLayout>
 </ScrollView>

@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BelajarAndroidKotlin">
         <activity
+            android:name=".recyclerview.MyRecyclerView"
+            android:exported="false" />
+        <activity
             android:name=".viewandviewgroup.MyViewAndViewsActivity"
             android:exported="false" />
         <activity

@@ -9,6 +9,7 @@ import android.widget.Button
 import com.example.belajarandroidkotlin.R
 import com.example.belajarandroidkotlin.barvolume.BarVolumeActivity
 import com.example.belajarandroidkotlin.intentmovewithdata.MoveWithDataActivity
+import com.example.belajarandroidkotlin.recyclerview.MyRecyclerView
 import com.example.belajarandroidkotlin.viewandviewgroup.MyViewAndViewsActivity
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener {
@@ -25,11 +26,12 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         btn_dial_number.setOnClickListener(this)
         val btn_MyViewAndViewsr: Button = findViewById(R.id.btn_MyViewAndViewsr)
         btn_MyViewAndViewsr.setOnClickListener(this)
+        val btn_MyRecyclerView: Button = findViewById(R.id.btn_MyRecyclerView)
+        btn_MyRecyclerView.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
         when (p0?.id){
-
             R.id.btn_BarVolume -> {
                 val intent = Intent(this, BarVolumeActivity::class.java)
                 startActivity(intent)
@@ -47,6 +49,10 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btn_MyViewAndViewsr -> {
                 val intent = Intent(this, MyViewAndViewsActivity::class.java)
+                startActivity(intent)
+            }
+            R.id.btn_MyRecyclerView -> {
+                val intent = Intent(this, MyRecyclerView::class.java)
                 startActivity(intent)
             }
         }
