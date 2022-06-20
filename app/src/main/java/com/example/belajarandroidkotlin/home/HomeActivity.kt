@@ -9,6 +9,7 @@ import android.widget.Button
 import com.example.belajarandroidkotlin.R
 import com.example.belajarandroidkotlin.barvolume.BarVolumeActivity
 import com.example.belajarandroidkotlin.intentmovewithdata.MoveWithDataActivity
+import com.example.belajarandroidkotlin.viewandviewgroup.MyViewAndViewsActivity
 
 class HomeActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -22,6 +23,8 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
         btn_MoveWithData.setOnClickListener(this)
         val btn_dial_number: Button = findViewById(R.id.btn_dial_number)
         btn_dial_number.setOnClickListener(this)
+        val btn_MyViewAndViewsr: Button = findViewById(R.id.btn_MyViewAndViewsr)
+        btn_MyViewAndViewsr.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
@@ -41,6 +44,10 @@ class HomeActivity : AppCompatActivity(), View.OnClickListener {
                 val phoneNumber = "081210841382"
                 val dialPhoneIntent = Intent(Intent.ACTION_DIAL, Uri.parse("tel:$phoneNumber"))
                 startActivity(dialPhoneIntent)
+            }
+            R.id.btn_MyViewAndViewsr -> {
+                val intent = Intent(this, MyViewAndViewsActivity::class.java)
+                startActivity(intent)
             }
         }
     }

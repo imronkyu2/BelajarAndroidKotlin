@@ -8,5 +8,6 @@ class MyViewAndViewsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_my_view_and_views)
+        supportActionBar?.title = "Google Pixel"
     }
 }
