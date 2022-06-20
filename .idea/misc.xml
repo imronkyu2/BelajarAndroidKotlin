@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/drawable/ic_launcher_background.xml" value="0.156" />
+        <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/layout/activity_card_view_hero_adapter.xml" value="0.25" />
         <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/layout/activity_my_recycler_view.xml" value="0.25" />
         <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/layout/activity_my_view_and_views.xml" value="0.24615384615384617" />
+        <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/layout/item_grid_hero.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/layout/item_row_hero.xml" value="0.25" />
         <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/menu/menu_main.xml" value="0.24895833333333334" />
         <entry key="..\:/Users/NEXSOFT/AndroidStudioProjects/BelajarAndroidKotlin/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.156" />
